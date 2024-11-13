@@ -1,0 +1,3 @@
+Upon contacting the authors, we were provided with a VM image called 'artifact.ova'.
+
+The next week was spent in exploring the contents of this image.
