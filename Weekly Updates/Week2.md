@@ -1,5 +1,7 @@
 **DEPIMPACT (Week 5/Week 2):** 
 
+---
+
 - Last week, I installed VirtualBox and Vagrant, but was having issues importing the .ova file into VirtualBox. 
 
 * This week, I managed to import the .ova file into VirtualBox using a .ovf 'redirection’ and then created a Vagrant Box to SSH into.
@@ -10,6 +12,8 @@
 
 * I then decided to open the VM image using VMWare, and not using Vagrant for the timebeing.
 
+---
+
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXda1b2BYrrNdUeJSAN9XCG_PB_hxwd_Ld-REhKenvFHll_kQDm6n1x5XUAff8EcEnDtJylRyXAly37jbDfzrQ2lIGuIAxpUtBFXbjZ-PrP7aGoQhdUcUm1Lk75OcuSRmYe4Dbw-qw?key=GisAA35hsIkUUANf4mXQzKjZ)
 
 As can be seen in the picture above, this was the ‘artifact’ home folder that opened when I launched the VM. It had two password-protected folders while the folder ‘DepImpact-artifact’ appeared to contain the files I required.
@@ -17,6 +21,8 @@ As can be seen in the picture above, this was the ‘artifact’ home folder tha
 There was also an issue that if I left this VM idle for a while, it logged out and then required a password to log back into the VM account. No password or any instructions were provided regarding this.
 
 It took me a day to find a work-around for this as I rebooted the VM in recovery mode and reset the password from a root shell.
+
+---
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfT2gokSvb2fuKImA18tnMtLOSIFdQ_ULm54Wh91zCeMSVa54O6jdB5_XMhrEHyvrIRfXgR6-rlRWQAvHXnl-0O35Lg9dpW8ffbV0Cu6oPj29vcVw11FA1pKcQ86azBPae674Ct7g?key=GisAA35hsIkUUANf4mXQzKjZ)
 
@@ -28,17 +34,23 @@ I created Log Folders and Result folders to modularise the reproducibility proce
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeC0wclT3NQsrsEW5Nm1aZzMd6cxm7iG0fUibCc3UzyXz8QqTMXVm9484ECDLTb6BaG_ibwg8deQi1KaCyFhcPPDUPSV_-H015wQVk_1xOVzSkXuVIJqEKcZcczQahs57JUXO7fMA?key=GisAA35hsIkUUANf4mXQzKjZ)
 
+---
+
 After constructing the directory structures, the manual provided sample commands to generate the results for the log files. I was able to generate results for 4 datasets; namely Dataleak, Firefox, Shellshock and VPNFilter. Here is one sample stats file generated for the first Dataleak case:
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcVI1gNCNEeUTRz8vY8yE9X563T4QXkb3T5aOk0FEqreuL3oxCxS3V38Czzy55yZSWYnr96Q9ekICUSu1tbhuz08CzQfa1xMFVrYU69hzF7V94Rwj38wv_X1ELtZ-ruqzl1wXn2rA?key=GisAA35hsIkUUANf4mXQzKjZ)
 
 Although I haven’t looked quite closely yet, these stats files seem to answer how the authors got to the data included in the Excel sheets for their **Research Questions**, an issue that hadn’t been addressed through their provided GitHub code repositories.
 
+---
+
 However, I was not able to generate results for the other datasets. These were namely Theia, Trace and Fivedirections. These folders did not contain text log files, instead contained .dot files along with a parameter file.
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXc9GYC5sGTHjYo7DamFJ17kHQP2OknPIT04jlIfLRpZPyxyQdeCYJCnrG_Zs8yrNjFXE_jOZUqhifdH8iYxjjcxiqRb5uekclxwYYZF_0F7ytQ05c5Shqde0167ElGU2InT_crfYw?key=GisAA35hsIkUUANf4mXQzKjZ)
 
 Running the sample command with this log file (.dot file) raised a Java Heap Memory Exception that I have been unable to solve. I plan to send an **email to the authors**, since raising a GitHub issue is not possible as the image is not on GitHub.
+
+---
 
 Here is a PNG file that I created of one of the filtered graphs using graphviz:
 
