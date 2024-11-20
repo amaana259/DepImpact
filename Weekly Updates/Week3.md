@@ -32,6 +32,8 @@ The manual also mentions another .jar file provided to calculate the metrics lik
 
 I assume this file is supposed to provide the metrics for RQ2 and the critical edges (attack entries too), however when run, this file does nothing.
 
+Moreover, the paper mentions 4 RQs and answers them using 4 tables. However, after inspection, RQ1 and RQ3 are verifiable, however RQ2 and RQ4 are not verifiable through the scripts they have provided.
+
 Would have to contact authors regarding this.
 
 ---
