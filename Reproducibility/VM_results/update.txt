@@ -1,0 +1,9 @@
+Clarity required regarding:
+1.⁠ ⁠How to run the DepImpact tool with the attack text files provided for e.g cmd_inject.txt and vpn_filter (files with multiple parameter files). 
+Do these need to be pre-processed into log files before running the tool? A README file regarding these instructions would be much appreciated.
+
+2.⁠ ⁠⁠How to reproduce the results in the excel sheets? Let’s start with RQ1.xlsx and how these results were procured? There seems to be no code files or READMEs that explain how these were drafted.
+
+Upon contacting the authors, we were provided with a VM image called 'artifact.ova'.
+
+The next week was spent in exploring the contents of this image.
